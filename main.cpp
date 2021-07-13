@@ -72,46 +72,9 @@ tryAgain:
 
 		return mylist;
 };
-/*void massDownload(void){
-				//fill path name
-				std::list<std::string> files;
-				boolean x = true;//temp
-				std::cout<<"\nEnter files paths\nPress `ESC` for stop\n\n[Start of list]\n\n";
-				while (x)
-				{
-					std::string temp;
-					std::cout<<" ";
-					if(_getch() == 27){std::cout<<"\n[End of list]\n\n";x=false;};
-					std::cin>>temp;
-					files.push_back(temp);
-				}
-				//make lists array
-
-				auto ib = files.begin(), ie = files.end();
-				
-				while(ie != ib)
-				{
-					
-					*ib
-					++ib;
-				}
-
-				_getch();
-				//download
-				_getch();
-}*/
 int main()
 {
-	startDownload(getList());/*
-			std::cout<<"Download from 1 or more files\n- [1] One file \n- [2] More file\n";lable1:
-			char getch1 = _getch();
-			if (getch1 =='1'){
-					startDownload(getList());goto end;
-				}
-			if(getch1 == '2'){
-				massDownload();goto end;
-			}else goto lable1;
-		end:*/
+	startDownload(getList());
 		std::cout<<"Press any key to exit...";
 		_getch();
 	return 0;
